@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 12px;
+}
+body {
+  background-color: lightsalmon;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  border-radius: 0.5em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.counter-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter-display img {
+  max-width: 100%;
+  height: auto;
+}
+.counter {
+  font-size: 4rem;
+  color: lightgray;
+  padding: 0rem 1.5rem;
+  width: 185px;
+  text-align: center;
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  width: 100%;
+  font-size: 1rem;
+}
+.actions > * {
+  margin-bottom: 1em;
+}
+.reset-btn {
+  background-color: transparent;
+  color: black;
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 0.25em;
+  font-size: 1rem;
+}
+.step-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+}
+.step-field label {
+  margin-right: 5px;
+  font-size: 1.25rem;
+}
+.step-field input {
+  font-size: 1.5rem;
+  max-width: 100px;
+  border: 2px solid black;
+  border-radius: 0.25em;
+  font-size: 1.25rem;
+  padding: 0.5em 0.5em;
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 16px;
+  }
+  .counter-display {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
